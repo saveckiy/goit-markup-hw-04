@@ -38,6 +38,14 @@ h2{
     letter-spacing: 0.03em;
     color: var(--text-primary);
     }
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+        
+    }
 
 /*Стилизирование хедера*/
 
@@ -47,14 +55,7 @@ h2{
         justify-content: center;
          
     }
-    .container{
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        
-    }
+   
     .logo{
         font-family: var(--secondary-font), sans-serif;
         font-style: normal;
@@ -131,12 +132,11 @@ h2{
         margin-right: 50px;
     }
 
-    .baner-box{
-        width: 1600px;
+    .hero-box{
         height: 600px;
-        left: 0px;
-        top: 80px;
+        max-width: 1600px;
         background: #2F303A;
+        margin: auto;
     }
 
     .slogan-box{
@@ -148,6 +148,7 @@ h2{
         text-transform: uppercase;
         color: #FFFFFF;
         padding-top: 200px;
+        padding-bottom: 170px;
         width: 696px;
         height: 120px;
         left: 452px;
@@ -165,8 +166,8 @@ h2{
         line-height: 30px;
         letter-spacing: 0.06em;
         color: #FFFFFF;
-        margin-left: 700px;
-        margin-top: 150px;
+        margin: auto;
+        display: block;
         }
 
     .button:hover{
@@ -180,6 +181,7 @@ h2{
     }
     .work-tools_box{
         display: flex;
+        justify-content: space-between;
         padding-top: 94px;
         width: 1200px;
     }
@@ -293,6 +295,7 @@ h2{
         letter-spacing: 0.03em;
         color: #FFFFFF;
         padding-top: 20px;
+        margin: 0;
         }
 
     .mail{
