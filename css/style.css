@@ -19,7 +19,7 @@ a {text-decoration: none;}
 address {font-style: normal;}
 
 h1,h2,h3,p{
-    margin: 0;
+    margin: auto;
 }
 
 img{
@@ -53,7 +53,7 @@ h2{
         display: flex;
         align-items: center;
         justify-content: center;
-         
+        margin-bottom: 1px;
     }
    
     .logo{
@@ -151,8 +151,7 @@ h2{
         padding-bottom: 170px;
         width: 696px;
         height: 120px;
-        left: 452px;
-        top: 280px;
+        
         }
 
     .button{
@@ -178,19 +177,21 @@ h2{
 
     .work-tools{ 
         margin: 0;
+        padding-top: 94px;
+    }
+    .work-box{
+        margin: 0px;
     }
     .work-tools_box{
         display: flex;
         justify-content: space-between;
-        padding-top: 94px;
+        
         width: 1200px;
     }
 
     .work-tools_list{
         width: 270px;
         height: 101px;
-        padding-right: 30px;
-        justify-content: space-between;
     }
     .work-tools_name{
         font-weight: bold;
@@ -213,11 +214,12 @@ h2{
 
     
     .specification{
-        margin-top: 94px; 
+        padding-top: 94px; 
     }
 
     .specification-box{
         display: flex;
+
     }
     .specification-list{
         width: 1200px;
@@ -236,8 +238,11 @@ h2{
     .team{
         background: #F5F4FA;
         padding-top: 94px;
+        
     }
-    
+    .team-box{
+        
+    }
     
     .team-member-name{
         font-weight: 500;
@@ -253,8 +258,8 @@ h2{
     .team-list{
         display: flex;
         justify-content: space-between;
-        margin-top: 50px;
         padding-bottom: 94px;
+        
     }
     .team-item{
         background: #FFFFFF;
@@ -275,16 +280,11 @@ h2{
         }
 
         /* Стилизирование футера */
+    
     .footer{
-        width: 1600px;
-        height: 252px;
-        left: 0px;
-        top: 2097px;
         background: #2F303A;
-        margin-top: 114px;
         padding-top: 60px;
         padding-bottom: 60px;
-        padding-left: 215px;
         }
      
     
@@ -347,6 +347,7 @@ h2{
         display: flex;
         justify-content: center;
         margin-top: 97px;
+        margin-bottom: 50px;
     }
 
     .button-portfolio{
@@ -363,8 +364,9 @@ h2{
         background: #F5F4FA;
         border-radius: 4px;
         border: none;
-        
     }
+
+
 
     .project{
         display: flex;
