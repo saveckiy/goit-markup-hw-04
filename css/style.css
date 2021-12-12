@@ -220,6 +220,7 @@ h2{
     
     .specification{
         padding-top: 94px; 
+        padding-bottom: 94px;
     }
 
     .specification-box{
@@ -244,7 +245,6 @@ h2{
         background: #F5F4FA;
         padding-top: 94px;
         padding-bottom: 94px;
-        margin-bottom: 114px;
     }
     .team-name{
         margin-bottom: 50px;
@@ -363,7 +363,7 @@ h2{
     .buttons{
         display: flex;
         justify-content: center;
-        margin-bottom: 38px;
+        margin-bottom: 50px;
     }
 
     .button-portfolio{
