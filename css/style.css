@@ -10,6 +10,7 @@
 
 body {
     font-family: var(--primary-font);
+    max-width: 1600px;
 }
 
 ul,li {
@@ -110,11 +111,13 @@ h2{
         font-size: 14px;
         line-height: 1.1;
         letter-spacing: 0.02em;
-        color: var(--text-primary);}
+        color: var(--text-primary);
+    }
 
     .active-page{
         color: var(--theme-colour);
-        }
+    }
+
     .link-box{
         display: flex;
         margin-left: auto;
@@ -122,6 +125,7 @@ h2{
     
     .card-icon{
         color: #757575;
+        margin-right: 10px;
     }
     
     
@@ -134,14 +138,24 @@ h2{
         line-height: 1.1;
         letter-spacing: 0.02em;
         color: var(--text-secondary); 
-        }
+        display: inline-flex;
+    }
 
+    .link-box_mail:hover .card-icon,
+    .link-box_mail:focus .card-icon{
+        fill: var(--theme-colour);
+    }
+    .link-box_phone:hover .card-icon,
+    .link-box_phone:focus .card-icon{
+        fill: var(--theme-colour);
+    }
     .link-box_mail:hover,
     .link-box_mail:focus,
     .link-box_phone:hover,
     .link-box_phone:focus{
         color: var(--theme-colour);
-        }
+    }
+
     
     .link-box_mail{
         margin-right: 50px;
@@ -149,10 +163,9 @@ h2{
 
     .hero-box{
         height: 600px;
-        /* max-width: 1600px; */
         background: #2F303A;
         margin: auto;
-        padding-top: 200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background_image.jpg);
     }
 
     .slogan-box{
@@ -164,7 +177,8 @@ h2{
         text-transform: uppercase;
         color: #FFFFFF;
         width: 696px;
-        padding-bottom: 30px;
+        padding-top: 200px;
+        margin-bottom: 30px;
         }
 
     .button{
@@ -192,16 +206,30 @@ h2{
         margin: 0;
         padding-top: 94px;
     }
+
+    .work-tools_list{
+        width: 270px;
+    }
     
     .work-tools_box{
         display: flex;
         justify-content: space-between;
     }
-
-    .work-tools_list{
-        width: 270px;
-        height: 101px;
+    
+    .tools-icon{
+        background: #F5F4FA;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    .work-tools-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+
     .work-tools_name{
         font-weight: bold;
         font-size: 14px;
@@ -292,15 +320,77 @@ h2{
         
         display: flex;
         justify-content: center;
-        }
+    }
+    .social-links{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-top: 16px;
+    }
+    .social-link{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+    }
+    
+    .social-link:hover .social-icon, .social-link:focus .social-link {
+        fill: #FFFFFF;
+    }
+    .social-link:hover, .social-link:focus {
+        background-color: #2196F3;
+       }
+
+    .social-icon{
+        fill: #AFB1B8;
+    }
+
+
+    /* Постоянные клиенты */
+        
+    .regular-customers{
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+    .customer-link{
+        fill: #AFB1B8;
+        display: inline-block;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    }
+    .customer-link:focus,
+    .customer-link:hover{
+        border-color: #2196F3;
+        fill: #2196F3;
+    }
+    .customer-box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    .customers-list{
+        
+        box-sizing: border-box;
+        
+
+    }
+    
 
         /* Стилизирование футера */
     
     .footer{
         background: #2F303A;
         padding-top: 60px;
-        padding-bottom: 60px
-         }
+        padding-bottom: 60px;
+        
+    }
+
+    .column{
+        display: flex;
+    }
      
     .logo-footer{
         display: inline-block;
@@ -321,8 +411,16 @@ h2{
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         }
+
+    .nav-footer{
+        margin-right: 70px;
+    }
+
     .location{
         color: #FFFFFF;
+    }
+    .footer-social-icon{
+        fill: #FFFFFF;
     }
     
     .footer-box{
@@ -362,7 +460,17 @@ h2{
         letter-spacing: 0.03em;
         color: #2196F3;
         }
-      
+
+    .footer-icon-name{
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+    .bkg_color{
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+   
+
     /* Стилизирование кнопок портфолио */
 
     .buttons{
@@ -436,5 +544,3 @@ h2{
         margin-bottom: 34px;
     }
     
-    
-    /* SVG файлы */
