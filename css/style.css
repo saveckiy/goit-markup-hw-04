@@ -10,7 +10,6 @@
 
 body {
     font-family: var(--primary-font);
-    max-width: 1600px;
 }
 
 ul,li {
@@ -166,6 +165,7 @@ h2{
         background: #2F303A;
         margin: auto;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background_image.jpg);
+        max-width: 1600px;
     }
 
     .slogan-box{
@@ -323,7 +323,6 @@ h2{
         letter-spacing: 0.03em;
         color: var(--text-secondary);
         padding-top: 10px;
-        
         display: flex;
         justify-content: center;
     }
@@ -335,6 +334,18 @@ h2{
         margin-top: 16px;
     }
     .social-link{
+      display: flex;  
+        
+    }
+    
+    .link-icon:hover .social-icon,
+    .link-icon:focus .social-icon {
+        fill: #FFFFFF;
+    }
+    .link-icon:hover, .link-icon:focus {
+        background-color: #2196F3;
+    }
+    .link-icon{
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -342,18 +353,11 @@ h2{
         height: 44px;
         border-radius: 50%;
     }
-    
-    .social-link:hover .social-icon, .social-link:focus .social-link {
-        fill: #FFFFFF;
-    }
-    .social-link:hover, .social-link:focus {
-        background-color: #2196F3;
-       }
 
     .social-icon{
         fill: #AFB1B8;
     }
-
+    
 
     /* Постоянные клиенты */
         
@@ -426,7 +430,7 @@ h2{
         }
 
     .footer-link{
-        display: inline-block;
+        display: flex;
         font-style: normal;
         font-weight: 400;
         line-height: 1.7;
@@ -441,8 +445,16 @@ h2{
     .location{
         color: #FFFFFF;
     }
-    .footer-social-icon{
+    .in-footer{
+        margin-left: 0px;
+    }
+    .in-foot{
         fill: #FFFFFF;
+    }
+
+    .foot{
+        background: rgba(255, 255, 255, 0.1);
+        margin-right: 10px;
     }
     
     .footer-box{
@@ -451,11 +463,6 @@ h2{
 
     .footer-box:last-child {
         margin-bottom: 0;
-        }
-
-    .footer-link:hover,
-    .footer-link:focus {
-        color: #FFFFFF;
         }
     
 
@@ -486,10 +493,14 @@ h2{
     .footer-icon-name{
         color: #FFFFFF;
         margin-bottom: 20px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
     }
-    .bkg_color{
-        background: rgba(255, 255, 255, 0.1);
-    }
+    
 
    
 
